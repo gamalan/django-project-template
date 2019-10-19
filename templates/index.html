@@ -1,0 +1,24 @@
+{% load render_bundle from webpack_loader %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      {% render_bundle 'index' 'css' %}
+    <title>My custom Bulma website</title>
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Hello World
+      </h1>
+      <p class="subtitle">
+        My first website with <strong>Bulma</strong> + Django + Webpack!
+      </p>
+    </div>
+  </section>
+  {% render_bundle 'index' 'js' %}
+  </body>
+</html>

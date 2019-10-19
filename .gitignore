@@ -1,0 +1,14 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+node_modules
+assets/*
+!assets/.gitignore
+static/*
+!static/.gitignore
+local/*
+!local/.gitignore
+webpack-stats.json
+db.sqlite3
+supervisord.*
+package-lock.json
+.env
